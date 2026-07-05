@@ -229,6 +229,11 @@ def fresh_ledger():
                 positions={}, pending=[], trades=[], history=[], pe_log=[])
 
 def main():
+    if '--test' in sys.argv:
+        telegram("✅ Telegram is working!")
+        sys.exit(0)
+
+    
     data = fetch()
     fx = {k: data[k] for k in FXS if k in data}
 
