@@ -106,12 +106,30 @@ def pe_snapshot(symbols):
     return out
 
 def telegram(msg):
-    tok, chat = os.environ.get('TG_TOKEN'), os.environ.get('TG_CHAT')
+    tok = os.environ.get("TG_TOKEN")
+    chat = os.environ.get("TG_CHAT")
+
+    print("TG_TOKEN exists:", bool(tok))
+    print("TG_CHAT:", chat)
+
     if not tok or not chat:
-        print('TG not configured; message:\n' + msg); return
+        print("Missing Telegram credentials")
+        return
+
     import requests
-    requests.post(f'https://api.telegram.org/bot{tok}/sendMessage',
-                  json={'chat_id': chat, 'text': msg, 'parse_mode': 'HTML'}, timeout=20)
+
+    r = requests.post(
+        f"https://api.telegram.org/bot{tok}/sendMessage",
+        json={
+            "chat_id": chat,
+            "text": msg,
+            "parse_mode": "HTML",
+        },
+        timeout=20,
+    )
+
+    print("Status:", r.status_code)
+    print("Response:", r.text)
 
 def precompute(data):
     """Signals are purely backward-looking, so computing once on full history is
