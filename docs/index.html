@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crisis bot dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 16px; background: #fafaf8; color: #111; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 16px 0; }
+  .card { background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; padding: 14px; }
+  .card .k { font-size: 12px; color: #777; } .card .v { font-size: 22px; font-weight: 600; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; overflow: hidden; font-size: 14px; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #eee; }
+  th { background: #f4f4f0; font-weight: 600; font-size: 12px; }
+  .pos { color: #0a7f3f; } .neg { color: #c0392b; }
+  h1 { font-size: 20px; } h2 { font-size: 16px; margin-top: 28px; }
+  #chartwrap { background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; padding: 12px; height: 320px; position: relative; }
+  #search { width: 100%; padding: 12px 14px; font-size: 16px; border: 1px solid #d5d5d0; border-radius: 10px; box-sizing: border-box; }
+  #suggest { background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; margin-top: 4px; max-height: 220px; overflow-y: auto; }
+  #suggest div { padding: 8px 14px; cursor: pointer; font-size: 14px; }
+  #suggest div:hover { background: #f0f0ea; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #eef; color: #336; margin-left: 6px; }
+  #stockpanel { display: none; background: #fff; border: 1px solid #e5e5e0; border-radius: 10px; padding: 16px; margin-top: 12px; }
+</style>
+</head>
+<body>
+<h1>ตกปลาก้นบ่อ — paper trading bot</h1>
+<p id="asof" style="color:#777"></p>
+
+<h2>Search a stock — full bot history</h2>
+<input id="search" placeholder="Type a symbol… e.g. 0700.HK, CPALL.BK, NVDA, MC.PA" autocomplete="off">
+<div id="suggest"></div>
+<div id="stockpanel"></div>
+
+<div class="cards" id="cards"></div>
+<div id="chartwrap"><canvas id="eq"></canvas></div>
+<h2>Open positions</h2>
+<table id="positions"><thead><tr><th>Symbol</th><th>Sleeve</th><th>Entry date</th><th>Entry $</th><th>Now $</th><th>P&amp;L</th><th>Dividends</th></tr></thead><tbody></tbody></table>
+<h2>Pending orders (execute at next weekly open)</h2>
+<table id="pending"><thead><tr><th>Symbol</th><th>Side</th><th>Sleeve</th></tr></thead><tbody></tbody></table>
+<h2>All live trades</h2>
+<table id="trades"><thead><tr><th>Date</th><th>Symbol</th><th>Side</th><th>Price $</th><th>P&amp;L</th><th>Dividends $</th></tr></thead><tbody></tbody></table>
+
+<script>
+let LED = null, BT = [];
+const fmt = (x, d=2) => x == null ? '' : (+x).toFixed(d);
+const pnlCell = p => `<td class="${p>=0?'pos':'neg'}">${(p*100).toFixed(1)}%</td>`;
+
+Promise.all([
+  fetch('data.json?_=' + Date.now()).then(r => r.json()),
+  fetch('backtest.json?_=' + Date.now()).then(r => r.json()).catch(() => [])
+]).then(([d, bt]) => { LED = d; BT = bt; render(); });
+
+function universe() {
+  const set = new Set();
+  (LED.trades || []).forEach(t => set.add(t.symbol));
+  Object.keys(LED.positions || {}).forEach(s => set.add(s));
+  BT.forEach(t => set.add(t.symbol));
+  (window.UNIVERSE || []).forEach(s => set.add(s));
+  return Array.from(set).sort();
+}
+
+function render() {
+  const d = LED;
+  const eq = d.history.length ? d.history[d.history.length-1].equity : 100000;
+  const cash = d.history.length ? d.history[d.history.length-1].cash : 100000;
+  const ret = eq/100000 - 1;
+  document.getElementById('asof').textContent = 'Last run: ' + (d.last_week || 'never') +
+    ' · paper capital $100,000 · universe ' + (window.UNIVERSE||[]).length + ' stocks (NDX + HSI + China A50 + STOXX50 + watchlists)';
+  const cards = [
+    ['Equity', '$' + eq.toLocaleString(undefined, {maximumFractionDigits:0})],
+    ['Total return', (ret>=0?'+':'') + (ret*100).toFixed(1) + '%'],
+    ['Cash', '$' + cash.toLocaleString(undefined, {maximumFractionDigits:0})],
+    ['Positions', Object.keys(d.positions).length],
+    ['Closed trades', d.trades.filter(t=>t.side==='sell').length],
+  ];
+  document.getElementById('cards').innerHTML = cards.map(c =>
+    `<div class="card"><div class="k">${c[0]}</div><div class="v">${c[1]}</div></div>`).join('');
+  new Chart(document.getElementById('eq'), { type: 'line',
+    data: { labels: d.history.map(h=>h.week),
+      datasets: [{ data: d.history.map(h=>h.equity), borderColor: '#2a78d6', pointRadius: 0, borderWidth: 2 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } } });
+  document.querySelector('#positions tbody').innerHTML = Object.entries(d.positions).map(([s,p]) => {
+    const pnl = p.last_px/p.entry_px - 1;
+    return `<tr><td><a href="#" onclick="show('${s}');return false">${s}</a></td><td>${p.sleeve}</td><td>${p.entry_date}</td><td>${fmt(p.entry_px)}</td><td>${fmt(p.last_px||p.entry_px)}</td>${pnlCell(pnl)}<td>$${fmt(p.div_usd,0)}</td></tr>`;
+  }).join('') || '<tr><td colspan="7" style="color:#999">none — waiting for signals</td></tr>';
+  document.querySelector('#pending tbody').innerHTML = d.pending.map(o =>
+    `<tr><td>${o.symbol}</td><td>${o.side}</td><td>${o.sleeve||''}</td></tr>`).join('') || '<tr><td colspan="3" style="color:#999">none</td></tr>';
+  document.querySelector('#trades tbody').innerHTML = d.trades.slice().reverse().map(t =>
+    `<tr><td>${t.date}</td><td><a href="#" onclick="show('${t.symbol}');return false">${t.symbol}</a></td><td>${t.side}</td><td>${fmt(t.px_usd)}</td>${t.pnl_pct!==undefined?pnlCell(t.pnl_pct):'<td></td>'}<td>${t.div_usd!==undefined?'$'+fmt(t.div_usd,0):''}</td></tr>`).join('') || '<tr><td colspan="6" style="color:#999">no trades yet</td></tr>';
+}
+
+const sEl = document.getElementById('search'), sugEl = document.getElementById('suggest');
+sEl.addEventListener('input', () => {
+  const q = sEl.value.trim().toUpperCase();
+  if (!q || !LED) { sugEl.innerHTML = ''; return; }
+  const hits = universe().filter(s => s.toUpperCase().includes(q)).slice(0, 12);
+  sugEl.innerHTML = hits.map(s => `<div onclick="show('${s}')">${s}</div>`).join('');
+});
+
+function show(sym) {
+  sugEl.innerHTML = ''; sEl.value = sym;
+  const p = document.getElementById('stockpanel');
+  const live = LED.trades.filter(t => t.symbol === sym);
+  const back = BT.filter(t => t.symbol === sym);
+  const pos = LED.positions[sym];
+  const pend = LED.pending.filter(o => o.symbol === sym);
+  const inUniv = (window.UNIVERSE||[]).includes(sym);
+  const sells = live.filter(t => t.side === 'sell');
+  const wins = sells.filter(t => t.pnl_pct > 0).length;
+  const totDiv = sells.reduce((a,t) => a + (t.div_usd||0), 0) + (pos ? pos.div_usd : 0);
+  let html = `<h2 style="margin-top:0">${sym}${inUniv?'<span class="badge">in universe</span>':'<span class="badge" style="background:#fee;color:#933">not in universe</span>'}${pos?'<span class="badge" style="background:#efe;color:#363">open position</span>':''}</h2>`;
+  if (pos) {
+    const pnl = pos.last_px/pos.entry_px - 1;
+    html += `<p>Holding since ${pos.entry_date} (${pos.sleeve} sleeve): entry $${fmt(pos.entry_px)}, now $${fmt(pos.last_px)}, <b class="${pnl>=0?'pos':'neg'}">${(pnl*100).toFixed(1)}%</b>, dividends $${fmt(pos.div_usd,0)}</p>`;
+  }
+  if (pend.length) html += `<p>Pending: ${pend.map(o=>o.side).join(', ')} at next weekly open</p>`;
+  html += `<p style="color:#777;font-size:13px">Live bot: ${live.length} trade records · ${sells.length} closed (${sells.length?wins+' wins':'—'}) · dividends collected $${fmt(totDiv,0)}</p>`;
+  const tbl = (rows, title) => rows.length ? `<h2>${title}</h2><table><thead><tr><th>Date</th><th>Side</th><th>Price $</th><th>P&amp;L</th><th>Held wk</th><th>Divs $</th></tr></thead><tbody>` +
+    rows.map(t => `<tr><td>${t.date}</td><td>${t.side}</td><td>${fmt(t.px_usd)}</td>${t.pnl_pct!==undefined?pnlCell(t.pnl_pct):'<td></td>'}<td>${t.held_wk??''}</td><td>${t.div_usd!==undefined?fmt(t.div_usd,0):''}</td></tr>`).join('') +
+    '</tbody></table>' : `<p style="color:#999">No ${title.toLowerCase()}.</p>`;
+  html += tbl(live, 'Live bot trades (paper)');
+  html += tbl(back, 'Research backtest trades (2008–2026)');
+  p.innerHTML = html; p.style.display = 'block';
+  p.scrollIntoView({behavior: 'smooth'});
+}
+</script>
+<script src="universe.js"></script>
+</body>
+</html>

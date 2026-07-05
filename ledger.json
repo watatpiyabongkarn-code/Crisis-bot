@@ -1,0 +1,639 @@
+{
+ "last_week": "2026-07-03",
+ "sleeves": {
+  "div": {
+   "cash": 35281.85811652261
+  },
+  "gro": {
+   "cash": 0.0
+  }
+ },
+ "positions": {
+  "WHAUP.BK": {
+   "shares": 124672.47941425271,
+   "entry_px": 0.11283323000619964,
+   "entry_date": "2025-08-29",
+   "div_usd": 873.6133773332883,
+   "mv": 26333.957631254343,
+   "sleeve": "div",
+   "last_px": 0.2112251056125528
+  },
+  "BH.BK": {
+   "shares": 2492.8266563808975,
+   "entry_px": 5.476923076923077,
+   "entry_date": "2026-03-20",
+   "div_usd": 621.2891051287776,
+   "mv": 14517.668819599072,
+   "sleeve": "gro",
+   "last_px": 5.823777911888956
+  },
+  "KCE.BK": {
+   "shares": 16055.398985222117,
+   "entry_px": 0.8620689655172415,
+   "entry_date": "2026-04-24",
+   "div_usd": 0.0,
+   "mv": 18894.404357986194,
+   "sleeve": "div",
+   "last_px": 1.176825588412794
+  },
+  "AOT.BK": {
+   "shares": 8414.676225581512,
+   "entry_px": 1.5814484524948316,
+   "entry_date": "2026-05-15",
+   "div_usd": 0.0,
+   "mv": 16313.909097574295,
+   "sleeve": "gro",
+   "last_px": 1.9387447193723597
+  },
+  "601066.SS": {
+   "shares": 3358.9350725390386,
+   "entry_px": 3.652430044182622,
+   "entry_date": "2026-06-26",
+   "div_usd": 0.0,
+   "mv": 14012.468145759889,
+   "sleeve": "gro",
+   "last_px": 4.171699614058864
+  }
+ },
+ "pending": [],
+ "trades": [
+  {
+   "symbol": "0316.HK",
+   "side": "buy",
+   "date": "2025-07-18",
+   "px_usd": 17.2772,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2269.HK",
+   "side": "buy",
+   "date": "2025-07-18",
+   "px_usd": 3.4274,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "2618.HK",
+   "side": "buy",
+   "date": "2025-07-18",
+   "px_usd": 1.7022,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "6690.HK",
+   "side": "buy",
+   "date": "2025-07-25",
+   "px_usd": 3.1911,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "COM7.BK",
+   "side": "buy",
+   "date": "2025-07-25",
+   "px_usd": 0.6506,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2057.HK",
+   "side": "buy",
+   "date": "2025-07-25",
+   "px_usd": 19.5289,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "PYPL",
+   "side": "buy",
+   "date": "2025-07-25",
+   "px_usd": 74.35,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "PYPL",
+   "side": "sell",
+   "date": "2025-08-08",
+   "px_usd": 67.825,
+   "pnl_pct": -0.0878,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "WBD",
+   "side": "buy",
+   "date": "2025-08-15",
+   "px_usd": 10.94,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "WHAUP.BK",
+   "side": "buy",
+   "date": "2025-08-29",
+   "px_usd": 0.1128,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2057.HK",
+   "side": "sell",
+   "date": "2025-09-05",
+   "px_usd": 18.0893,
+   "pnl_pct": -0.0737,
+   "div_usd": 0.0,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "0101.HK",
+   "side": "buy",
+   "date": "2025-09-05",
+   "px_usd": 1.0205,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2618.HK",
+   "side": "sell",
+   "date": "2025-11-28",
+   "px_usd": 1.5401,
+   "pnl_pct": -0.0952,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "601012.SS",
+   "side": "buy",
+   "date": "2025-11-28",
+   "px_usd": 2.688,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "COM7.BK",
+   "side": "sell",
+   "date": "2025-12-19",
+   "px_usd": 0.6497,
+   "pnl_pct": -0.0013,
+   "div_usd": 0.0,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "WBD",
+   "side": "sell",
+   "date": "2025-12-26",
+   "px_usd": 28.85,
+   "pnl_pct": 1.6371,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "MC.PA",
+   "side": "buy",
+   "date": "2025-12-26",
+   "px_usd": 743.6335,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "0316.HK",
+   "side": "sell",
+   "date": "2026-01-23",
+   "px_usd": 15.4168,
+   "pnl_pct": -0.1077,
+   "div_usd": 524.02,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2688.HK",
+   "side": "buy",
+   "date": "2026-01-23",
+   "px_usd": 8.914,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "MC.PA",
+   "side": "sell",
+   "date": "2026-02-13",
+   "px_usd": 636.2435,
+   "pnl_pct": -0.1444,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "AOT.BK",
+   "side": "buy",
+   "date": "2026-02-13",
+   "px_usd": 1.8259,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "AOT.BK",
+   "side": "sell",
+   "date": "2026-03-20",
+   "px_usd": 1.5077,
+   "pnl_pct": -0.1743,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "BH.BK",
+   "side": "buy",
+   "date": "2026-03-20",
+   "px_usd": 5.4769,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "6690.HK",
+   "side": "sell",
+   "date": "2026-04-03",
+   "px_usd": 2.6694,
+   "pnl_pct": -0.1635,
+   "div_usd": 149.2,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2331.HK",
+   "side": "buy",
+   "date": "2026-04-03",
+   "px_usd": 2.6847,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2688.HK",
+   "side": "sell",
+   "date": "2026-04-24",
+   "px_usd": 7.801,
+   "pnl_pct": -0.1249,
+   "div_usd": 0.0,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "KCE.BK",
+   "side": "buy",
+   "date": "2026-04-24",
+   "px_usd": 0.8621,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "601012.SS",
+   "side": "sell",
+   "date": "2026-05-08",
+   "px_usd": 2.4304,
+   "pnl_pct": -0.0959,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "AOT.BK",
+   "side": "buy",
+   "date": "2026-05-15",
+   "px_usd": 1.5814,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "0101.HK",
+   "side": "sell",
+   "date": "2026-05-29",
+   "px_usd": 1.0609,
+   "pnl_pct": 0.0396,
+   "div_usd": 578.93,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2331.HK",
+   "side": "sell",
+   "date": "2026-06-12",
+   "px_usd": 2.2257,
+   "pnl_pct": -0.171,
+   "div_usd": 0.0,
+   "sleeve": "div"
+  },
+  {
+   "symbol": "2269.HK",
+   "side": "sell",
+   "date": "2026-06-19",
+   "px_usd": 3.9787,
+   "pnl_pct": 0.1608,
+   "div_usd": 0.0,
+   "sleeve": "gro"
+  },
+  {
+   "symbol": "601066.SS",
+   "side": "buy",
+   "date": "2026-06-26",
+   "px_usd": 3.6524,
+   "sleeve": "gro"
+  }
+ ],
+ "history": [
+  {
+   "week": "2025-07-11",
+   "equity": 100000.0,
+   "cash": 100000.0,
+   "npos": 0
+  },
+  {
+   "week": "2025-07-18",
+   "equity": 100829.32,
+   "cash": 66006.67,
+   "npos": 3
+  },
+  {
+   "week": "2025-07-25",
+   "equity": 104794.96,
+   "cash": 14095.39,
+   "npos": 7
+  },
+  {
+   "week": "2025-08-01",
+   "equity": 102198.84,
+   "cash": 14095.39,
+   "npos": 7
+  },
+  {
+   "week": "2025-08-08",
+   "equity": 103621.18,
+   "cash": 23187.39,
+   "npos": 6
+  },
+  {
+   "week": "2025-08-15",
+   "equity": 104762.83,
+   "cash": 14095.39,
+   "npos": 7
+  },
+  {
+   "week": "2025-08-22",
+   "equity": 105796.75,
+   "cash": 14095.39,
+   "npos": 7
+  },
+  {
+   "week": "2025-08-29",
+   "equity": 105516.35,
+   "cash": 0.0,
+   "npos": 8
+  },
+  {
+   "week": "2025-09-05",
+   "equity": 107656.38,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-09-12",
+   "equity": 115527.18,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-09-19",
+   "equity": 117253.96,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-09-26",
+   "equity": 115501.6,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-10-03",
+   "equity": 117278.25,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-10-10",
+   "equity": 114058.54,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-10-17",
+   "equity": 111762.9,
+   "cash": 524.02,
+   "npos": 8
+  },
+  {
+   "week": "2025-10-24",
+   "equity": 115657.94,
+   "cash": 673.22,
+   "npos": 8
+  },
+  {
+   "week": "2025-10-31",
+   "equity": 116966.21,
+   "cash": 673.22,
+   "npos": 8
+  },
+  {
+   "week": "2025-11-07",
+   "equity": 115720.07,
+   "cash": 673.22,
+   "npos": 8
+  },
+  {
+   "week": "2025-11-14",
+   "equity": 115903.35,
+   "cash": 673.22,
+   "npos": 8
+  },
+  {
+   "week": "2025-11-21",
+   "equity": 112970.28,
+   "cash": 673.22,
+   "npos": 8
+  },
+  {
+   "week": "2025-11-28",
+   "equity": 114547.91,
+   "cash": 882.23,
+   "npos": 8
+  },
+  {
+   "week": "2025-12-05",
+   "equity": 119363.95,
+   "cash": 882.23,
+   "npos": 8
+  },
+  {
+   "week": "2025-12-12",
+   "equity": 122351.7,
+   "cash": 882.23,
+   "npos": 8
+  },
+  {
+   "week": "2025-12-19",
+   "equity": 119258.68,
+   "cash": 14775.88,
+   "npos": 7
+  },
+  {
+   "week": "2025-12-26",
+   "equity": 118954.18,
+   "cash": 23573.27,
+   "npos": 7
+  },
+  {
+   "week": "2026-01-02",
+   "equity": 117834.29,
+   "cash": 23573.27,
+   "npos": 7
+  },
+  {
+   "week": "2026-01-09",
+   "equity": 121245.94,
+   "cash": 23573.27,
+   "npos": 7
+  },
+  {
+   "week": "2026-01-16",
+   "equity": 121488.32,
+   "cash": 23573.27,
+   "npos": 7
+  },
+  {
+   "week": "2026-01-23",
+   "equity": 121065.87,
+   "cash": 21112.57,
+   "npos": 7
+  },
+  {
+   "week": "2026-01-30",
+   "equity": 119048.59,
+   "cash": 21112.57,
+   "npos": 7
+  },
+  {
+   "week": "2026-02-06",
+   "equity": 119105.68,
+   "cash": 21112.57,
+   "npos": 7
+  },
+  {
+   "week": "2026-02-13",
+   "equity": 122896.79,
+   "cash": 19119.28,
+   "npos": 7
+  },
+  {
+   "week": "2026-02-20",
+   "equity": 123488.69,
+   "cash": 19119.28,
+   "npos": 7
+  },
+  {
+   "week": "2026-02-27",
+   "equity": 123645.04,
+   "cash": 19119.28,
+   "npos": 7
+  },
+  {
+   "week": "2026-03-06",
+   "equity": 115652.28,
+   "cash": 19119.28,
+   "npos": 7
+  },
+  {
+   "week": "2026-03-13",
+   "equity": 113568.55,
+   "cash": 19119.28,
+   "npos": 7
+  },
+  {
+   "week": "2026-03-20",
+   "equity": 111019.97,
+   "cash": 18270.45,
+   "npos": 7
+  },
+  {
+   "week": "2026-03-27",
+   "equity": 108185.19,
+   "cash": 18270.45,
+   "npos": 7
+  },
+  {
+   "week": "2026-04-03",
+   "equity": 109235.49,
+   "cash": 16263.16,
+   "npos": 7
+  },
+  {
+   "week": "2026-04-10",
+   "equity": 112673.74,
+   "cash": 16263.16,
+   "npos": 7
+  },
+  {
+   "week": "2026-04-17",
+   "equity": 111119.39,
+   "cash": 16263.16,
+   "npos": 7
+  },
+  {
+   "week": "2026-04-24",
+   "equity": 109444.22,
+   "cash": 15384.89,
+   "npos": 7
+  },
+  {
+   "week": "2026-05-01",
+   "equity": 112061.09,
+   "cash": 16049.49,
+   "npos": 7
+  },
+  {
+   "week": "2026-05-08",
+   "equity": 113080.51,
+   "cash": 24738.06,
+   "npos": 6
+  },
+  {
+   "week": "2026-05-15",
+   "equity": 112376.19,
+   "cash": 11404.02,
+   "npos": 7
+  },
+  {
+   "week": "2026-05-22",
+   "equity": 114064.43,
+   "cash": 11404.02,
+   "npos": 7
+  },
+  {
+   "week": "2026-05-29",
+   "equity": 117304.15,
+   "cash": 24741.73,
+   "npos": 6
+  },
+  {
+   "week": "2026-06-05",
+   "equity": 118118.66,
+   "cash": 24741.73,
+   "npos": 6
+  },
+  {
+   "week": "2026-06-12",
+   "equity": 116775.51,
+   "cash": 36012.72,
+   "npos": 5
+  },
+  {
+   "week": "2026-06-19",
+   "equity": 121196.95,
+   "cash": 47574.72,
+   "npos": 4
+  },
+  {
+   "week": "2026-06-26",
+   "equity": 124941.95,
+   "cash": 35281.86,
+   "npos": 5
+  },
+  {
+   "week": "2026-07-03",
+   "equity": 125354.27,
+   "cash": 35281.86,
+   "npos": 5
+  }
+ ],
+ "pe_log": [],
+ "stopped": {
+  "MC.PA": "2026-02-06",
+  "AOT.BK": "2026-03-13"
+ }
+}

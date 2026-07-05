@@ -1,0 +1,1088 @@
+[
+ {
+  "symbol": "HMPRO.BK",
+  "side": "buy",
+  "date": "2009-04-17",
+  "px_usd": 0.0182
+ },
+ {
+  "symbol": "LH.BK",
+  "side": "buy",
+  "date": "2009-06-12",
+  "px_usd": 0.1464
+ },
+ {
+  "symbol": "LH.BK",
+  "side": "sell",
+  "date": "2009-07-17",
+  "px_usd": 0.1116,
+  "pnl_pct": -0.2377,
+  "held_wk": 5,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "LH.BK",
+  "side": "buy",
+  "date": "2009-07-24",
+  "px_usd": 0.1344
+ },
+ {
+  "symbol": "AOT.BK",
+  "side": "buy",
+  "date": "2009-08-14",
+  "px_usd": 0.1122
+ },
+ {
+  "symbol": "LH.BK",
+  "side": "sell",
+  "date": "2010-04-23",
+  "px_usd": 0.1282,
+  "pnl_pct": -0.0461,
+  "held_wk": 39,
+  "div_usd": 867.66
+ },
+ {
+  "symbol": "AOT.BK",
+  "side": "sell",
+  "date": "2010-04-30",
+  "px_usd": 0.1065,
+  "pnl_pct": -0.0506,
+  "held_wk": 37,
+  "div_usd": 229.1
+ },
+ {
+  "symbol": "HMPRO.BK",
+  "side": "sell",
+  "date": "2010-09-17",
+  "px_usd": 0.0949,
+  "pnl_pct": 4.2185,
+  "held_wk": 74,
+  "div_usd": 3898.77
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2012-12-21",
+  "px_usd": 0.4516
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "buy",
+  "date": "2013-01-18",
+  "px_usd": 0.3194
+ },
+ {
+  "symbol": "1398.HK",
+  "side": "buy",
+  "date": "2013-03-22",
+  "px_usd": 0.6828
+ },
+ {
+  "symbol": "1398.HK",
+  "side": "sell",
+  "date": "2013-06-28",
+  "px_usd": 0.5866,
+  "pnl_pct": -0.1409,
+  "held_wk": 14,
+  "div_usd": 1919.03
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2013-06-28",
+  "px_usd": 0.3919,
+  "pnl_pct": -0.1322,
+  "held_wk": 27,
+  "div_usd": 2301.89
+ },
+ {
+  "symbol": "0939.HK",
+  "side": "buy",
+  "date": "2013-08-23",
+  "px_usd": 0.7685
+ },
+ {
+  "symbol": "1398.HK",
+  "side": "buy",
+  "date": "2013-08-23",
+  "px_usd": 0.6795
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2013-09-13",
+  "px_usd": 0.4514
+ },
+ {
+  "symbol": "0939.HK",
+  "side": "sell",
+  "date": "2014-01-17",
+  "px_usd": 0.7235,
+  "pnl_pct": -0.0586,
+  "held_wk": 21,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "1398.HK",
+  "side": "sell",
+  "date": "2014-01-17",
+  "px_usd": 0.6448,
+  "pnl_pct": -0.0511,
+  "held_wk": 21,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2014-02-14",
+  "px_usd": 0.4126,
+  "pnl_pct": -0.0859,
+  "held_wk": 22,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "sell",
+  "date": "2014-12-26",
+  "px_usd": 0.4656,
+  "pnl_pct": 0.4575,
+  "held_wk": 101,
+  "div_usd": 2849.08
+ },
+ {
+  "symbol": "0939.HK",
+  "side": "buy",
+  "date": "2016-06-10",
+  "px_usd": 0.6596
+ },
+ {
+  "symbol": "0939.HK",
+  "side": "sell",
+  "date": "2018-07-13",
+  "px_usd": 0.8791,
+  "pnl_pct": 0.3328,
+  "held_wk": 109,
+  "div_usd": 5059.68
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2019-02-01",
+  "px_usd": 0.4588
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2019-05-31",
+  "px_usd": 0.4167,
+  "pnl_pct": -0.0919,
+  "held_wk": 17,
+  "div_usd": 2771.25
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "buy",
+  "date": "2020-01-03",
+  "px_usd": 0.1758
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "sell",
+  "date": "2020-03-13",
+  "px_usd": 0.1568,
+  "pnl_pct": -0.1081,
+  "held_wk": 10,
+  "div_usd": 1557.47
+ },
+ {
+  "symbol": "ORI.BK",
+  "side": "buy",
+  "date": "2021-01-01",
+  "px_usd": 0.2709
+ },
+ {
+  "symbol": "WPH.BK",
+  "side": "buy",
+  "date": "2021-03-26",
+  "px_usd": 0.0617
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2021-04-23",
+  "px_usd": 0.3969
+ },
+ {
+  "symbol": "ORI.BK",
+  "side": "sell",
+  "date": "2022-05-20",
+  "px_usd": 0.272,
+  "pnl_pct": 0.004,
+  "held_wk": 72,
+  "div_usd": 5683.98
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2022-07-22",
+  "px_usd": 0.344,
+  "pnl_pct": -0.1333,
+  "held_wk": 65,
+  "div_usd": 8008.58
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "buy",
+  "date": "2023-02-03",
+  "px_usd": 8.1459
+ },
+ {
+  "symbol": "600066.SS",
+  "side": "buy",
+  "date": "2023-03-10",
+  "px_usd": 1.5409
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "sell",
+  "date": "2023-04-07",
+  "px_usd": 6.5417,
+  "pnl_pct": -0.1969,
+  "held_wk": 9,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "buy",
+  "date": "2023-04-21",
+  "px_usd": 6.5997
+ },
+ {
+  "symbol": "WPH.BK",
+  "side": "sell",
+  "date": "2023-04-28",
+  "px_usd": 0.0965,
+  "pnl_pct": 0.5642,
+  "held_wk": 109,
+  "div_usd": 4514.61
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "sell",
+  "date": "2023-07-14",
+  "px_usd": 6.3991,
+  "pnl_pct": -0.0304,
+  "held_wk": 12,
+  "div_usd": 1916.44
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "buy",
+  "date": "2023-07-21",
+  "px_usd": 6.6038
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "sell",
+  "date": "2023-08-25",
+  "px_usd": 5.7388,
+  "pnl_pct": -0.131,
+  "held_wk": 5,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "600066.SS",
+  "side": "sell",
+  "date": "2024-05-24",
+  "px_usd": 3.4924,
+  "pnl_pct": 1.2665,
+  "held_wk": 63,
+  "div_usd": 13078.99
+ },
+ {
+  "symbol": "1398.HK",
+  "side": "buy",
+  "date": "2024-07-26",
+  "px_usd": 0.547
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "buy",
+  "date": "2024-10-04",
+  "px_usd": 6.3422
+ },
+ {
+  "symbol": "COM7.BK",
+  "side": "buy",
+  "date": "2025-07-25",
+  "px_usd": 0.6506
+ },
+ {
+  "symbol": "1833.HK",
+  "side": "buy",
+  "date": "2025-08-08",
+  "px_usd": 1.5161
+ },
+ {
+  "symbol": "WHAUP.BK",
+  "side": "buy",
+  "date": "2025-08-29",
+  "px_usd": 0.1128
+ },
+ {
+  "symbol": "COM7.BK",
+  "side": "sell",
+  "date": "2025-12-19",
+  "px_usd": 0.6497,
+  "pnl_pct": -0.0013,
+  "held_wk": 21,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "1833.HK",
+  "side": "sell",
+  "date": "2026-03-13",
+  "px_usd": 1.436,
+  "pnl_pct": -0.0528,
+  "held_wk": 31,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "BH.BK",
+  "side": "buy",
+  "date": "2026-04-17",
+  "px_usd": 5.4619
+ },
+ {
+  "symbol": "KCE.BK",
+  "side": "buy",
+  "date": "2026-04-24",
+  "px_usd": 0.8621
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "sell",
+  "date": "2026-06-12",
+  "px_usd": 7.166,
+  "pnl_pct": 0.1299,
+  "held_wk": 88,
+  "div_usd": 7233.81
+ },
+ {
+  "symbol": "KCE.BK",
+  "side": "buy",
+  "date": "2008-02-29",
+  "px_usd": 0.0618
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2008-04-18",
+  "px_usd": 0.4761
+ },
+ {
+  "symbol": "KCE.BK",
+  "side": "sell",
+  "date": "2008-06-06",
+  "px_usd": 0.0512,
+  "pnl_pct": -0.1717,
+  "held_wk": 14,
+  "div_usd": 618.35
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2008-07-04",
+  "px_usd": 0.4268,
+  "pnl_pct": -0.1035,
+  "held_wk": 11,
+  "div_usd": 1624.03
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "buy",
+  "date": "2009-09-25",
+  "px_usd": 0.0575
+ },
+ {
+  "symbol": "NVDA",
+  "side": "buy",
+  "date": "2009-09-25",
+  "px_usd": 0.376
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "buy",
+  "date": "2009-09-25",
+  "px_usd": 0.0532
+ },
+ {
+  "symbol": "NVDA",
+  "side": "sell",
+  "date": "2009-11-06",
+  "px_usd": 0.2985,
+  "pnl_pct": -0.2061,
+  "held_wk": 6,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "buy",
+  "date": "2009-11-06",
+  "px_usd": 0.0294
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "sell",
+  "date": "2010-04-30",
+  "px_usd": 0.051,
+  "pnl_pct": -0.1129,
+  "held_wk": 31,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "NVDA",
+  "side": "buy",
+  "date": "2010-04-30",
+  "px_usd": 0.4115
+ },
+ {
+  "symbol": "NVDA",
+  "side": "sell",
+  "date": "2010-05-14",
+  "px_usd": 0.37,
+  "pnl_pct": -0.1009,
+  "held_wk": 2,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "buy",
+  "date": "2010-06-18",
+  "px_usd": 0.0566
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "sell",
+  "date": "2010-07-23",
+  "px_usd": 0.1288,
+  "pnl_pct": 3.3766,
+  "held_wk": 37,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "buy",
+  "date": "2010-08-06",
+  "px_usd": 0.5468
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "sell",
+  "date": "2010-11-26",
+  "px_usd": 0.471,
+  "pnl_pct": -0.1387,
+  "held_wk": 16,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "NVDA",
+  "side": "buy",
+  "date": "2010-11-26",
+  "px_usd": 0.3415
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "sell",
+  "date": "2011-03-25",
+  "px_usd": 0.086,
+  "pnl_pct": 0.6167,
+  "held_wk": 78,
+  "div_usd": 5605.37
+ },
+ {
+  "symbol": "NVDA",
+  "side": "sell",
+  "date": "2011-07-01",
+  "px_usd": 0.3935,
+  "pnl_pct": 0.1523,
+  "held_wk": 31,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "sell",
+  "date": "2011-07-08",
+  "px_usd": 0.1142,
+  "pnl_pct": 1.016,
+  "held_wk": 55,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "0981.HK",
+  "side": "buy",
+  "date": "2012-02-17",
+  "px_usd": 0.561
+ },
+ {
+  "symbol": "0981.HK",
+  "side": "sell",
+  "date": "2012-03-09",
+  "px_usd": 0.5285,
+  "pnl_pct": -0.0579,
+  "held_wk": 3,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "buy",
+  "date": "2012-03-23",
+  "px_usd": 0.3839
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "sell",
+  "date": "2012-09-07",
+  "px_usd": 0.3398,
+  "pnl_pct": -0.1149,
+  "held_wk": 24,
+  "div_usd": 2660.19
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2012-12-21",
+  "px_usd": 0.4516
+ },
+ {
+  "symbol": "1211.HK",
+  "side": "buy",
+  "date": "2013-01-04",
+  "px_usd": 0.959
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "buy",
+  "date": "2013-01-04",
+  "px_usd": 0.4267
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2013-06-28",
+  "px_usd": 0.3919,
+  "pnl_pct": -0.1322,
+  "held_wk": 27,
+  "div_usd": 4218.41
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "buy",
+  "date": "2013-06-28",
+  "px_usd": 0.3504
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "sell",
+  "date": "2014-05-09",
+  "px_usd": 0.4457,
+  "pnl_pct": 0.0444,
+  "held_wk": 70,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "buy",
+  "date": "2014-06-20",
+  "px_usd": 3.9548
+ },
+ {
+  "symbol": "1211.HK",
+  "side": "sell",
+  "date": "2014-12-12",
+  "px_usd": 1.8169,
+  "pnl_pct": 0.8946,
+  "held_wk": 101,
+  "div_usd": 189.45
+ },
+ {
+  "symbol": "FPT.VN",
+  "side": "sell",
+  "date": "2014-12-26",
+  "px_usd": 0.4656,
+  "pnl_pct": 0.3285,
+  "held_wk": 78,
+  "div_usd": 4388.66
+ },
+ {
+  "symbol": "2318.HK",
+  "side": "sell",
+  "date": "2015-08-28",
+  "px_usd": 4.774,
+  "pnl_pct": 0.2071,
+  "held_wk": 62,
+  "div_usd": 1828.17
+ },
+ {
+  "symbol": "MWG.VN",
+  "side": "buy",
+  "date": "2015-11-13",
+  "px_usd": 0.4167
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "buy",
+  "date": "2016-04-29",
+  "px_usd": 0.6639
+ },
+ {
+  "symbol": "JMT.BK",
+  "side": "buy",
+  "date": "2016-08-19",
+  "px_usd": 0.2135
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "sell",
+  "date": "2016-09-16",
+  "px_usd": 0.6161,
+  "pnl_pct": -0.072,
+  "held_wk": 20,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "MWG.VN",
+  "side": "sell",
+  "date": "2018-04-13",
+  "px_usd": 1.1625,
+  "pnl_pct": 1.7896,
+  "held_wk": 126,
+  "div_usd": 4146.38
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "buy",
+  "date": "2018-04-27",
+  "px_usd": 0.2422
+ },
+ {
+  "symbol": "JMT.BK",
+  "side": "sell",
+  "date": "2018-06-08",
+  "px_usd": 0.4425,
+  "pnl_pct": 1.0721,
+  "held_wk": 94,
+  "div_usd": 10208.72
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "sell",
+  "date": "2018-06-29",
+  "px_usd": 0.181,
+  "pnl_pct": -0.2528,
+  "held_wk": 9,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "buy",
+  "date": "2018-08-17",
+  "px_usd": 0.1959
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "sell",
+  "date": "2018-09-14",
+  "px_usd": 0.1794,
+  "pnl_pct": -0.084,
+  "held_wk": 4,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "300750.SZ",
+  "side": "buy",
+  "date": "2018-09-14",
+  "px_usd": 5.1603
+ },
+ {
+  "symbol": "WHAUP.BK",
+  "side": "buy",
+  "date": "2018-09-28",
+  "px_usd": 0.1942
+ },
+ {
+  "symbol": "WHAUP.BK",
+  "side": "sell",
+  "date": "2019-01-04",
+  "px_usd": 0.1725,
+  "pnl_pct": -0.1118,
+  "held_wk": 14,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2019-02-01",
+  "px_usd": 0.4588
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "buy",
+  "date": "2019-04-26",
+  "px_usd": 0.2348
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2019-05-31",
+  "px_usd": 0.4167,
+  "pnl_pct": -0.0919,
+  "held_wk": 17,
+  "div_usd": 11145.8
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "sell",
+  "date": "2019-05-31",
+  "px_usd": 0.1824,
+  "pnl_pct": -0.2228,
+  "held_wk": 5,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "300750.SZ",
+  "side": "sell",
+  "date": "2019-06-07",
+  "px_usd": 5.5162,
+  "pnl_pct": 0.069,
+  "held_wk": 38,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "buy",
+  "date": "2019-08-02",
+  "px_usd": 0.2069
+ },
+ {
+  "symbol": "300750.SZ",
+  "side": "buy",
+  "date": "2019-08-09",
+  "px_usd": 5.8913
+ },
+ {
+  "symbol": "TRUE.BK",
+  "side": "sell",
+  "date": "2019-10-11",
+  "px_usd": 0.1726,
+  "pnl_pct": -0.1657,
+  "held_wk": 10,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "buy",
+  "date": "2020-01-03",
+  "px_usd": 0.1758
+ },
+ {
+  "symbol": "1810.HK",
+  "side": "buy",
+  "date": "2020-02-07",
+  "px_usd": 1.4555
+ },
+ {
+  "symbol": "DELTA.BK",
+  "side": "sell",
+  "date": "2020-03-13",
+  "px_usd": 0.1568,
+  "pnl_pct": -0.1081,
+  "held_wk": 10,
+  "div_usd": 5848.76
+ },
+ {
+  "symbol": "DOHOME.BK",
+  "side": "buy",
+  "date": "2020-05-08",
+  "px_usd": 0.1491
+ },
+ {
+  "symbol": "1810.HK",
+  "side": "sell",
+  "date": "2021-01-15",
+  "px_usd": 4.2241,
+  "pnl_pct": 1.9021,
+  "held_wk": 49,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "AMATA.BK",
+  "side": "buy",
+  "date": "2021-01-15",
+  "px_usd": 0.547
+ },
+ {
+  "symbol": "300750.SZ",
+  "side": "sell",
+  "date": "2021-01-22",
+  "px_usd": 32.3924,
+  "pnl_pct": 4.4983,
+  "held_wk": 76,
+  "div_usd": 480.33
+ },
+ {
+  "symbol": "DOHOME.BK",
+  "side": "sell",
+  "date": "2021-03-19",
+  "px_usd": 0.4407,
+  "pnl_pct": 1.956,
+  "held_wk": 45,
+  "div_usd": 234.2
+ },
+ {
+  "symbol": "ORI.BK",
+  "side": "buy",
+  "date": "2021-03-19",
+  "px_usd": 0.2705
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "buy",
+  "date": "2021-04-23",
+  "px_usd": 0.3969
+ },
+ {
+  "symbol": "ORI.BK",
+  "side": "sell",
+  "date": "2022-05-20",
+  "px_usd": 0.272,
+  "pnl_pct": 0.0056,
+  "held_wk": 61,
+  "div_usd": 63259.22
+ },
+ {
+  "symbol": "AMATA.BK",
+  "side": "sell",
+  "date": "2022-06-24",
+  "px_usd": 0.5298,
+  "pnl_pct": -0.0315,
+  "held_wk": 75,
+  "div_usd": 12616.03
+ },
+ {
+  "symbol": "3988.HK",
+  "side": "sell",
+  "date": "2022-07-22",
+  "px_usd": 0.344,
+  "pnl_pct": -0.1333,
+  "held_wk": 65,
+  "div_usd": 96454.73
+ },
+ {
+  "symbol": "META",
+  "side": "buy",
+  "date": "2023-04-14",
+  "px_usd": 214.71
+ },
+ {
+  "symbol": "AMZN",
+  "side": "buy",
+  "date": "2023-06-30",
+  "px_usd": 129.33
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "buy",
+  "date": "2023-08-04",
+  "px_usd": 0.7198
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "sell",
+  "date": "2023-08-25",
+  "px_usd": 0.5509,
+  "pnl_pct": -0.2346,
+  "held_wk": 3,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "buy",
+  "date": "2023-08-25",
+  "px_usd": 1.3808
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "sell",
+  "date": "2023-09-22",
+  "px_usd": 1.1024,
+  "pnl_pct": -0.2016,
+  "held_wk": 4,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "MWG.VN",
+  "side": "buy",
+  "date": "2023-09-29",
+  "px_usd": 2.1161
+ },
+ {
+  "symbol": "MWG.VN",
+  "side": "sell",
+  "date": "2023-11-03",
+  "px_usd": 1.6728,
+  "pnl_pct": -0.2095,
+  "held_wk": 5,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "MWG.VN",
+  "side": "buy",
+  "date": "2024-01-26",
+  "px_usd": 1.8736
+ },
+ {
+  "symbol": "META",
+  "side": "sell",
+  "date": "2024-04-19",
+  "px_usd": 516.72,
+  "pnl_pct": 1.4066,
+  "held_wk": 53,
+  "div_usd": 1470.29
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "buy",
+  "date": "2024-04-19",
+  "px_usd": 0.9449
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "sell",
+  "date": "2024-04-26",
+  "px_usd": 0.8412,
+  "pnl_pct": -0.1097,
+  "held_wk": 1,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "DIDIY",
+  "side": "buy",
+  "date": "2024-04-26",
+  "px_usd": 4.47
+ },
+ {
+  "symbol": "DIDIY",
+  "side": "sell",
+  "date": "2024-07-19",
+  "px_usd": 3.7,
+  "pnl_pct": -0.1723,
+  "held_wk": 12,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "1810.HK",
+  "side": "buy",
+  "date": "2024-07-19",
+  "px_usd": 2.1562
+ },
+ {
+  "symbol": "MWG.VN",
+  "side": "sell",
+  "date": "2025-01-17",
+  "px_usd": 2.231,
+  "pnl_pct": 0.1907,
+  "held_wk": 51,
+  "div_usd": 2855.72
+ },
+ {
+  "symbol": "9868.HK",
+  "side": "buy",
+  "date": "2025-01-17",
+  "px_usd": 6.0673
+ },
+ {
+  "symbol": "1810.HK",
+  "side": "sell",
+  "date": "2025-03-21",
+  "px_usd": 6.9925,
+  "pnl_pct": 2.243,
+  "held_wk": 35,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "buy",
+  "date": "2025-03-21",
+  "px_usd": 1.0276
+ },
+ {
+  "symbol": "AMZN",
+  "side": "sell",
+  "date": "2025-04-11",
+  "px_usd": 162.0,
+  "pnl_pct": 0.2526,
+  "held_wk": 93,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "buy",
+  "date": "2025-04-11",
+  "px_usd": 0.5221
+ },
+ {
+  "symbol": "VIC.VN",
+  "side": "sell",
+  "date": "2025-09-12",
+  "px_usd": 2.3716,
+  "pnl_pct": 1.3079,
+  "held_wk": 25,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "WHAUP.BK",
+  "side": "buy",
+  "date": "2025-09-12",
+  "px_usd": 0.1243
+ },
+ {
+  "symbol": "9868.HK",
+  "side": "sell",
+  "date": "2026-02-06",
+  "px_usd": 8.7027,
+  "pnl_pct": 0.4344,
+  "held_wk": 55,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "6169.HK",
+  "side": "buy",
+  "date": "2026-02-06",
+  "px_usd": 0.0717
+ },
+ {
+  "symbol": "0241.HK",
+  "side": "sell",
+  "date": "2026-03-27",
+  "px_usd": 0.6146,
+  "pnl_pct": 0.1773,
+  "held_wk": 50,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "6169.HK",
+  "side": "sell",
+  "date": "2026-03-27",
+  "px_usd": 0.0626,
+  "pnl_pct": -0.1263,
+  "held_wk": 7,
+  "div_usd": 0.0
+ },
+ {
+  "symbol": "AOT.BK",
+  "side": "buy",
+  "date": "2026-03-27",
+  "px_usd": 1.4411
+ }
+]
