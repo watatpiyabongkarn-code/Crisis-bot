@@ -37,6 +37,10 @@ The `ledger.json` in this folder ships pre-seeded with a 52-week replay (Jul 202
 
 To re-run the backfill yourself from scratch (e.g. after changing the universe): run `python paper_bot.py --backfill 52` locally, or temporarily change the workflow run line to that command and trigger it manually once. Warning: it resets the ledger.
 
+## Weekly Telegram report & dashboard analytics
+
+Each run sends a full portfolio report to Telegram: value/total return/weekly return/cash/dividends, this week's buys/sells/dividend payments (stop-losses labelled), every open position (invested → current, P&L in $ and %, entry date), weekly best/worst holding, allocation %, pending orders, and a stats footer (CAGR, Sharpe, max drawdown, win rate). All report logic lives in `reporting.py` — completely separate from trading logic; it only reads the ledger. The dashboard adds allocation pie, cash history, weekly & monthly return charts, trade statistics (win rate, avg gain/loss, largest win/loss, realized & unrealized P&L) and risk metrics (volatility, turnover, dividend yield, drawdowns, all-time high). Metrics that need more history than exists are omitted automatically rather than shown wrong.
+
 ## What happens each week
 
 1. Downloads the latest weekly bars for all 74 stocks + FX + 3 indices (regime only).

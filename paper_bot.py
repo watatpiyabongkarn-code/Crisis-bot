@@ -106,30 +106,12 @@ def pe_snapshot(symbols):
     return out
 
 def telegram(msg):
-    tok = os.environ.get("TG_TOKEN")
-    chat = os.environ.get("TG_CHAT")
-
-    print("TG_TOKEN exists:", bool(tok))
-    print("TG_CHAT:", chat)
-
+    tok, chat = os.environ.get('TG_TOKEN'), os.environ.get('TG_CHAT')
     if not tok or not chat:
-        print("Missing Telegram credentials")
-        return
-
+        print('TG not configured; message:\n' + msg); return
     import requests
-
-    r = requests.post(
-        f"https://api.telegram.org/bot{tok}/sendMessage",
-        json={
-            "chat_id": chat,
-            "text": msg,
-            "parse_mode": "HTML",
-        },
-        timeout=20,
-    )
-
-    print("Status:", r.status_code)
-    print("Response:", r.text)
+    requests.post(f'https://api.telegram.org/bot{tok}/sendMessage',
+                  json={'chat_id': chat, 'text': msg, 'parse_mode': 'HTML'}, timeout=20)
 
 def precompute(data):
     """Signals are purely backward-looking, so computing once on full history is
@@ -163,10 +145,17 @@ def step(data, fx, SIG, IDXDD, led, latest):
         if px <= 0 or np.isnan(px): continue
         if o['side'] == 'sell' and s in led['positions']:
             pos = led['positions'].pop(s)
-            led['sleeves'][pos['sleeve']]['cash'] += pos['shares'] * px * (1 - COST)
+            proceeds = pos['shares'] * px * (1 - COST)
+            led['sleeves'][pos['sleeve']]['cash'] += proceeds
             pnl = px / pos['entry_px'] - 1
+            # reporting-only fields: pnl_usd = proceeds minus original cost basis,
+            # held_wk = holding period in weeks, stop = whether a stop-loss queued this exit
+            cost_basis = pos['shares'] * pos['entry_px']
+            held_wk = int((latest - pd.Timestamp(pos['entry_date'])).days / 7)
             led['trades'].append(dict(symbol=s, side='sell', date=week, px_usd=round(px,4),
-                                      pnl_pct=round(pnl,4), div_usd=round(pos['div_usd'],2), sleeve=pos['sleeve']))
+                                      pnl_pct=round(pnl,4), div_usd=round(pos['div_usd'],2), sleeve=pos['sleeve'],
+                                      pnl_usd=round(proceeds - cost_basis, 2), held_wk=held_wk,
+                                      stop=bool(o.get('stop'))))
             log.append(f"SELL {s} @ ${px:,.2f} ({pnl:+.1%}, divs ${pos['div_usd']:,.0f})")
         elif o['side'] == 'buy' and s not in led['positions']:
             sl = led['sleeves'][o['sleeve']]
@@ -181,11 +170,14 @@ def step(data, fx, SIG, IDXDD, led, latest):
             sl['cash'] -= alloc
             led['positions'][s] = dict(shares=sh, entry_px=px, entry_date=week, div_usd=0.0,
                                        mv=sh*px, sleeve=o['sleeve'])
-            led['trades'].append(dict(symbol=s, side='buy', date=week, px_usd=round(px,4), sleeve=o['sleeve']))
+            # cost_usd is reporting-only (turnover / invested-capital analytics)
+            led['trades'].append(dict(symbol=s, side='buy', date=week, px_usd=round(px,4), sleeve=o['sleeve'],
+                                      cost_usd=round(alloc, 2)))
             log.append(f"BUY {s} @ ${px:,.2f} (${alloc:,.0f}, {o['sleeve']})")
     led['pending'] = []
 
     # 2) dividends + mark to market
+    week_divs = {}  # reporting-only: dividends credited this week, per symbol
     for s, pos in led['positions'].items():
         if s not in D: continue
         w = D[s]
@@ -196,10 +188,14 @@ def step(data, fx, SIG, IDXDD, led, latest):
                 dv_usd = dv * m_usd * pos['shares'] * WH
                 led['sleeves'][pos['sleeve']]['cash'] += dv_usd
                 pos['div_usd'] += dv_usd
+                week_divs[s] = round(dv_usd, 2)
                 log.append(f"DIV {s}: +${dv_usd:,.2f}")
+        # prev_px is reporting-only: last week's close, for "weekly leaders" in the report
+        pos['prev_px'] = pos.get('last_px')
         sub = w[w.index <= latest]
         if len(sub): pos['last_px'] = float(sub['close'].iloc[-1]) * m_usd
         pos['mv'] = pos['shares'] * pos['last_px']
+    led['last_run'] = dict(week=week, divs=week_divs)  # reporting-only metadata
 
     # 3) new signals -> queue orders for next week
     cands = {'div': [], 'gro': []}
@@ -212,7 +208,8 @@ def step(data, fx, SIG, IDXDD, led, latest):
             cfg = DIV if pos['sleeve'] == 'div' else GRO
             stop = pos.get('last_px', pos['entry_px']) < pos['entry_px'] * (1 - cfg['stop'])
             if bool(row['exit']) or stop:
-                led['pending'].append(dict(symbol=s, side='sell', sleeve=pos['sleeve']))
+                # 'stop' flag on the order is reporting-only (labels the exit in the report)
+                led['pending'].append(dict(symbol=s, side='sell', sleeve=pos['sleeve'], stop=bool(stop)))
                 if stop: cooldown[s] = week
                 log.append(f"signal EXIT {s}" + (' (stop)' if stop else ''))
         elif bool(row['entry']):
@@ -247,11 +244,6 @@ def fresh_ledger():
                 positions={}, pending=[], trades=[], history=[], pe_log=[])
 
 def main():
-    if '--test' in sys.argv:
-        telegram("✅ Telegram is working!")
-        sys.exit(0)
-
-    
     data = fetch()
     fx = {k: data[k] for k in FXS if k in data}
 
@@ -281,15 +273,11 @@ def main():
     led.setdefault('pe_log', []).append(dict(week=week, pe={k: v for k, v in pe.items() if v}))
     save(led)
 
-    eq = led['history'][-1]['equity']; cash = led['history'][-1]['cash']
-    lines = [f"<b>Crisis bot — week {week}</b>",
-             f"Equity: ${eq:,.0f} ({eq/100000-1:+.1%} total) | cash ${cash:,.0f} | {len(led['positions'])} positions"]
-    if log: lines += [''] + log
-    else: lines.append('No signals this week.')
-    for s, p in led['positions'].items():
-        lines.append(f"  {s}: {p['last_px']/p['entry_px']-1:+.1%} (entry {p['entry_date']})")
-    telegram('\n'.join(lines))
-    print('\n'.join(lines))
+    # weekly portfolio report (all analytics live in reporting.py, read-only over the ledger)
+    import reporting
+    msg = reporting.build_report(led, week, log)
+    telegram(msg)
+    print(msg)
 
 if __name__ == '__main__':
     main()
