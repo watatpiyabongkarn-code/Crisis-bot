@@ -16,6 +16,7 @@
    "div_usd": 873.6133773332883,
    "mv": 26333.957631254343,
    "sleeve": "div",
+   "prev_px": 0.2117625856061516,
    "last_px": 0.2112251056125528
   },
   "BH.BK": {
@@ -25,6 +26,7 @@
    "div_usd": 621.2891051287776,
    "mv": 14517.668819599072,
    "sleeve": "gro",
+   "prev_px": 5.662020905923344,
    "last_px": 5.823777911888956
   },
   "KCE.BK": {
@@ -34,6 +36,7 @@
    "div_usd": 0.0,
    "mv": 18894.404357986194,
    "sleeve": "div",
+   "prev_px": 1.1489246665865673,
    "last_px": 1.176825588412794
   },
   "AOT.BK": {
@@ -43,6 +46,7 @@
    "div_usd": 0.0,
    "mv": 16313.909097574295,
    "sleeve": "gro",
+   "prev_px": 1.869818575033041,
    "last_px": 1.9387447193723597
   },
   "601066.SS": {
@@ -52,6 +56,7 @@
    "div_usd": 0.0,
    "mv": 14012.468145759889,
    "sleeve": "gro",
+   "prev_px": 4.455081001472754,
    "last_px": 4.171699614058864
   }
  },
@@ -62,49 +67,56 @@
    "side": "buy",
    "date": "2025-07-18",
    "px_usd": 17.2772,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 14000.0
   },
   {
    "symbol": "2269.HK",
    "side": "buy",
    "date": "2025-07-18",
    "px_usd": 3.4274,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 10000.0
   },
   {
    "symbol": "2618.HK",
    "side": "buy",
    "date": "2025-07-18",
    "px_usd": 1.7022,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 9993.33
   },
   {
    "symbol": "6690.HK",
    "side": "buy",
    "date": "2025-07-25",
    "px_usd": 3.1911,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 13973.79
   },
   {
    "symbol": "COM7.BK",
    "side": "buy",
    "date": "2025-07-25",
    "px_usd": 0.6506,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 13968.2
   },
   {
    "symbol": "2057.HK",
    "side": "buy",
    "date": "2025-07-25",
    "px_usd": 19.5289,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 13962.62
   },
   {
    "symbol": "PYPL",
    "side": "buy",
    "date": "2025-07-25",
    "px_usd": 74.35,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 10006.67
   },
   {
    "symbol": "PYPL",
@@ -113,21 +125,26 @@
    "px_usd": 67.825,
    "pnl_pct": -0.0878,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": -894.66,
+   "held_wk": 2,
+   "stop": false
   },
   {
    "symbol": "WBD",
    "side": "buy",
    "date": "2025-08-15",
    "px_usd": 10.94,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 9092.0
   },
   {
    "symbol": "WHAUP.BK",
    "side": "buy",
    "date": "2025-08-29",
    "px_usd": 0.1128,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 14095.39
   },
   {
    "symbol": "2057.HK",
@@ -136,14 +153,18 @@
    "px_usd": 18.0893,
    "pnl_pct": -0.0737,
    "div_usd": 0.0,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": -1053.05,
+   "held_wk": 6,
+   "stop": false
   },
   {
    "symbol": "0101.HK",
    "side": "buy",
    "date": "2025-09-05",
    "px_usd": 1.0205,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 12881.64
   },
   {
    "symbol": "2618.HK",
@@ -152,14 +173,18 @@
    "px_usd": 1.5401,
    "pnl_pct": -0.0952,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": -967.98,
+   "held_wk": 19,
+   "stop": false
   },
   {
    "symbol": "601012.SS",
    "side": "buy",
    "date": "2025-11-28",
    "px_usd": 2.688,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 9005.37
   },
   {
    "symbol": "COM7.BK",
@@ -168,7 +193,10 @@
    "px_usd": 0.6497,
    "pnl_pct": -0.0013,
    "div_usd": 0.0,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": -46.62,
+   "held_wk": 21,
+   "stop": false
   },
   {
    "symbol": "WBD",
@@ -177,14 +205,18 @@
    "px_usd": 28.85,
    "pnl_pct": 1.6371,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": 14806.99,
+   "held_wk": 19,
+   "stop": false
   },
   {
    "symbol": "MC.PA",
    "side": "buy",
    "date": "2025-12-26",
    "px_usd": 743.6335,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 15083.42
   },
   {
    "symbol": "0316.HK",
@@ -193,14 +225,18 @@
    "px_usd": 15.4168,
    "pnl_pct": -0.1077,
    "div_usd": 524.02,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": -1529.44,
+   "held_wk": 27,
+   "stop": false
   },
   {
    "symbol": "2688.HK",
    "side": "buy",
    "date": "2026-01-23",
    "px_usd": 8.914,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 14903.25
   },
   {
    "symbol": "MC.PA",
@@ -209,14 +245,18 @@
    "px_usd": 636.2435,
    "pnl_pct": -0.1444,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": -2199.64,
+   "held_wk": 7,
+   "stop": true
   },
   {
    "symbol": "AOT.BK",
    "side": "buy",
    "date": "2026-02-13",
    "px_usd": 1.8259,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 14846.91
   },
   {
    "symbol": "AOT.BK",
@@ -225,14 +265,18 @@
    "px_usd": 1.5077,
    "pnl_pct": -0.1743,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": -2606.95,
+   "held_wk": 5,
+   "stop": true
   },
   {
    "symbol": "BH.BK",
    "side": "buy",
    "date": "2026-03-20",
    "px_usd": 5.4769,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 13680.38
   },
   {
    "symbol": "6690.HK",
@@ -241,14 +285,18 @@
    "px_usd": 2.6694,
    "pnl_pct": -0.1635,
    "div_usd": 149.2,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": -2303.27,
+   "held_wk": 36,
+   "stop": false
   },
   {
    "symbol": "2331.HK",
    "side": "buy",
    "date": "2026-04-03",
    "px_usd": 2.6847,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 13649.87
   },
   {
    "symbol": "2688.HK",
@@ -257,14 +305,18 @@
    "px_usd": 7.801,
    "pnl_pct": -0.1249,
    "div_usd": 0.0,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": -1883.12,
+   "held_wk": 13,
+   "stop": false
   },
   {
    "symbol": "KCE.BK",
    "side": "buy",
    "date": "2026-04-24",
    "px_usd": 0.8621,
-   "sleeve": "div"
+   "sleeve": "div",
+   "cost_usd": 13868.6
   },
   {
    "symbol": "601012.SS",
@@ -273,14 +325,18 @@
    "px_usd": 2.4304,
    "pnl_pct": -0.0959,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": -877.71,
+   "held_wk": 23,
+   "stop": false
   },
   {
    "symbol": "AOT.BK",
    "side": "buy",
    "date": "2026-05-15",
    "px_usd": 1.5814,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 13334.04
   },
   {
    "symbol": "0101.HK",
@@ -289,7 +345,10 @@
    "px_usd": 1.0609,
    "pnl_pct": 0.0396,
    "div_usd": 578.93,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": 481.83,
+   "held_wk": 38,
+   "stop": false
   },
   {
    "symbol": "2331.HK",
@@ -298,7 +357,10 @@
    "px_usd": 2.2257,
    "pnl_pct": -0.171,
    "div_usd": 0.0,
-   "sleeve": "div"
+   "sleeve": "div",
+   "pnl_usd": -2351.57,
+   "held_wk": 10,
+   "stop": false
   },
   {
    "symbol": "2269.HK",
@@ -307,14 +369,18 @@
    "px_usd": 3.9787,
    "pnl_pct": 0.1608,
    "div_usd": 0.0,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "pnl_usd": 1582.0,
+   "held_wk": 48,
+   "stop": false
   },
   {
    "symbol": "601066.SS",
    "side": "buy",
    "date": "2026-06-26",
    "px_usd": 3.6524,
-   "sleeve": "gro"
+   "sleeve": "gro",
+   "cost_usd": 12292.86
   }
  ],
  "history": [
@@ -632,6 +698,10 @@
   }
  ],
  "pe_log": [],
+ "last_run": {
+  "week": "2026-07-03",
+  "divs": {}
+ },
  "stopped": {
   "MC.PA": "2026-02-06",
   "AOT.BK": "2026-03-13"
